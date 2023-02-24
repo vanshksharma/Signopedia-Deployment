@@ -29,8 +29,10 @@ SECRET_KEY = '*$8xygr7cwmy7snte@*b7+55wr^oxws4o9_a-_x!vq)_g8e#tk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*",".vercel.app",".now.sh"]
 
+STATICFILES_DIRS = os.path.join(BASE_DIR,"static")
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles_build","static")
 
 # Application definition
 
